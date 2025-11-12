@@ -63,12 +63,12 @@ export default function About() {
         {/* Story Section */}
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gray-900 border-2 border-primary shadow-xl overflow-hidden">
-            <CardContent className="p-8 md:p-12">
-              <h3 className="text-3xl font-bold text-white mb-6">Our Story</h3>
-              <p className="text-white/90 leading-relaxed mb-4 text-lg">
+            <CardContent className="p-8 md:p-12 bg-white">
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
+              <p className="text-gray-800 leading-relaxed mb-4 text-lg">
                 What began as a tight-knit band of Christian friends sharing recipes, laughter, and prayer grew into Crispy Corner. As musicians who love to jam and worship together, our friendship and faith turned late-night cooking experiments into dishes our community loved. Encouraged by one another and guided by Christian values, we decided to turn that bond into a business, serving neighbors with honesty, care, and the same warmth that brought us together.
               </p>
-              <p className="text-white/80 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 From our signature Crispy Kare-kare to our famous Crispy Dinuguan, every dish is 
                 crafted with traditional recipes and modern techniques. We&apos;re proud to be part of 
                 the Kanluran Night Market, bringing delicious food to our neighbors every evening.
