@@ -52,35 +52,35 @@ export default function Menu() {
     <section id="menu" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Top Products</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
             Our Menu
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Authentic Filipino flavors, prepared fresh daily
           </p>
         </div>
 
         {/* Categories and Products */}
-        <div className="max-w-7xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-10">
           {categories.map((category) => {
             const categoryItems = menuItems.filter((item) => item.category === category);
             
             return (
               <div key={category}>
                 {/* Category Header */}
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900">{category}</h3>
-                  <div className="h-1 w-20 bg-primary mt-2"></div>
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">{category}</h3>
+                  <div className="h-0.5 w-16 bg-primary mt-1"></div>
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                   {categoryItems.map((item) => (
-                    <Card key={item.name} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
+                    <Card key={item.name} className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
                       {/* Image */}
-                      <div className="aspect-[4/3] relative overflow-hidden bg-gray-100">
+                      <div className="aspect-square relative overflow-hidden bg-gray-100">
                         {item.image ? (
                           <Image
                             src={item.image}
@@ -94,23 +94,23 @@ export default function Menu() {
                           </div>
                         )}
                         {item.price && (
-                          <div className="absolute top-3 right-3 bg-primary text-white px-3 py-1 rounded-full shadow-lg">
-                            <span className="font-bold text-sm">{item.price}</span>
+                          <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 rounded-full shadow-lg">
+                            <span className="font-bold text-xs">{item.price}</span>
                           </div>
                         )}
                       </div>
 
-                      <CardHeader className="pb-3">
-                        <CardTitle className="text-base font-semibold text-gray-900 leading-tight">{item.name}</CardTitle>
+                      <CardHeader className="pb-2 px-3 pt-3">
+                        <CardTitle className="text-sm font-semibold text-gray-900 leading-tight line-clamp-2">{item.name}</CardTitle>
                         {item.description && (
-                          <p className="text-xs text-gray-500 mt-1">{item.description}</p>
+                          <p className="text-xs text-gray-500 mt-1 line-clamp-1">{item.description}</p>
                         )}
                       </CardHeader>
 
-                      <CardContent className="pt-0">
-                        <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white gap-2 text-sm">
-                          <ShoppingCart className="h-4 w-4" />
-                          <span>Order Now</span>
+                      <CardContent className="pt-0 px-3 pb-3">
+                        <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white gap-1 text-xs py-2 h-8">
+                          <ShoppingCart className="h-3 w-3" />
+                          <span>Order</span>
                         </Button>
                       </CardContent>
                     </Card>
@@ -122,12 +122,12 @@ export default function Menu() {
         </div>
 
         {/* Tagline */}
-        <div className="text-center mt-16">
-          <div className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg shadow-lg">
-            <p className="text-lg font-semibold flex items-center gap-3">
-              <span className="text-primary text-2xl">✕</span>
+        <div className="text-center mt-12">
+          <div className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg">
+            <p className="text-base font-semibold flex items-center gap-2">
+              <span className="text-primary text-xl">✕</span>
               Exactly as shown, Exactly as served
-              <span className="text-primary text-2xl">✕</span>
+              <span className="text-primary text-xl">✕</span>
             </p>
           </div>
         </div>
