@@ -64,60 +64,24 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Food Images */}
+          {/* Right Content - Logo */}
           <div className="hidden lg:flex items-center justify-center">
-            <div className="w-[320px]">
-              <div className="grid grid-cols-2 gap-2">
-                {/* Left Column */}
-                <div className="space-y-2">
-                  <div className="aspect-square rounded-md shadow-sm overflow-hidden border border-primary/20">
-                    <Image
-                      src="/menus/overloaddinuguan.png"
-                      alt="Overload Dinuguan"
-                      width={150}
-                      height={150}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="aspect-square rounded-md shadow-sm overflow-hidden border border-primary/20">
-                    <Image
-                      src="/menus/lemongrasstea.png"
-                      alt="Lemongrass Tea"
-                      width={150}
-                      height={150}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                {/* Right Column */}
-                <div className="space-y-2 pt-4">
-                  <div className="aspect-square rounded-md shadow-sm overflow-hidden border border-primary/20">
-                    <Image
-                      src="/menus/overloadkarekare.png"
-                      alt="Overload Kare-kare"
-                      width={150}
-                      height={150}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="aspect-square rounded-md shadow-sm overflow-hidden border border-primary/20">
-                    <Image
-                      src="/menus/siomaiwithrice.png"
-                      alt="Siomai with Rice"
-                      width={150}
-                      height={150}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
+            <div className="relative">
+              <div className="w-[500px] h-[500px] rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/30">
+                <Image
+                  src="/menus/hero-logo.png"
+                  alt="Crispy Corner Logo"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-contain bg-white/5"
+                  priority
+                />
               </div>
               
               {/* Floating badge */}
-              <div className="relative mt-3 ml-3">
-                <div className="inline-block bg-white rounded-md shadow-lg px-3 py-1.5 border-2 border-primary">
-                  <p className="text-[10px] font-semibold text-gray-700">EXACTLY AS SHOWN</p>
-                  <p className="text-base font-bold text-primary">100%</p>
-                </div>
+              <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-2xl px-4 py-3 border-2 border-primary">
+                <p className="text-xs font-semibold text-gray-700">EXACTLY AS SHOWN</p>
+                <p className="text-xl font-bold text-primary">100%</p>
               </div>
             </div>
           </div>
