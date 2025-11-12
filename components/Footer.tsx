@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Crispy Corner</h3>
             <p className="text-sm leading-relaxed mb-4">
-              Authentic Filipino street food served at Kanluran Night Market, Calauan, Laguna.
+              Authentic Filipino street served at Kanluran Night Market, Calauan, Laguna.
               Exactly as shown, exactly as served.
             </p>
             <p className="text-xs text-gray-400">by LDRR</p>
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="text-center text-sm text-gray-400">
           <p>© {currentYear} Crispy Corner by LDRR. All rights reserved.</p>
           <p className="mt-2">
-            Website designed and developed by{' '}
+            Shop Owner, Website designed, developed by{' '}
             <Link
               href="https://leedev.vercel.app/"
               target="_blank"
