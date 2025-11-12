@@ -49,7 +49,7 @@ const categories = [
 
 export default function Menu() {
   return (
-    <section id="menu" className="py-20 bg-gray-50">
+    <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -124,13 +124,7 @@ export default function Menu() {
 
         {/* Tagline */}
         <div className="text-center mt-12">
-          <div className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg">
-            <p className="text-base font-semibold flex items-center gap-2">
-              <span className="text-primary text-xl">✕</span>
-              Exactly as shown, Exactly as served
-              <span className="text-primary text-xl">✕</span>
-            </p>
-          </div>
+       
         </div>
       </div>
     </section>
