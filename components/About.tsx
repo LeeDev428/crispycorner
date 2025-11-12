@@ -62,7 +62,7 @@ export default function About() {
 
         {/* Story Section */}
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-gradient-to-br from-secondary to-black border-2 border-primary shadow-2xl overflow-hidden">
+          <Card className="bg-secondary border-2 border-primary shadow-xl overflow-hidden">
             <CardContent className="p-8 md:p-12">
               <h3 className="text-3xl font-bold text-white mb-6">Our Story</h3>
               <p className="text-white/90 leading-relaxed mb-4 text-lg">
