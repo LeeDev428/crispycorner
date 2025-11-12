@@ -37,7 +37,7 @@ export default function About() {
             About Crispy Corner
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At Crispy Corner by LDRR, we bring you the authentic taste of Filipino street food. 
+            At Crispy Corner by LDRR, we bring you the authentic taste of Filipino food. 
             Located at Kanluran Night Market in Calauan, Laguna, we&apos;ve been serving our community 
             with delicious, affordable, and quality Filipino dishes.
           </p>
