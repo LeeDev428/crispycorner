@@ -65,56 +65,60 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Food Images */}
-          <div className="hidden lg:block relative">
-            <div className="grid grid-cols-2 gap-3">
-              {/* Left Column */}
-              <div className="space-y-3">
-                <div className="aspect-square rounded-xl shadow-lg overflow-hidden border border-primary/20">
-                  <Image
-                    src="/menus/overloaddinuguan.png"
-                    alt="Overload Dinuguan"
-                    width={300}
-                    height={300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+          <div className="hidden lg:flex items-center justify-center">
+            <div className="w-[400px]">
+              <div className="grid grid-cols-2 gap-2">
+                {/* Left Column */}
+                <div className="space-y-2">
+                  <div className="aspect-square rounded-lg shadow-md overflow-hidden border border-primary/20">
+                    <Image
+                      src="/menus/overloaddinuguan.png"
+                      alt="Overload Dinuguan"
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-square rounded-lg shadow-md overflow-hidden border border-primary/20">
+                    <Image
+                      src="/menus/lemongrasstea.png"
+                      alt="Lemongrass Tea"
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
-                <div className="aspect-[4/3] rounded-xl shadow-lg overflow-hidden border border-primary/20">
-                  <Image
-                    src="/menus/lemongrasstea.png"
-                    alt="Lemongrass Tea"
-                    width={300}
-                    height={225}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                {/* Right Column */}
+                <div className="space-y-2 pt-6">
+                  <div className="aspect-square rounded-lg shadow-md overflow-hidden border border-primary/20">
+                    <Image
+                      src="/menus/overloadkarekare.png"
+                      alt="Overload Kare-kare"
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-square rounded-lg shadow-md overflow-hidden border border-primary/20">
+                    <Image
+                      src="/menus/siomaiwithrice.png"
+                      alt="Siomai with Rice"
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
               </div>
-              {/* Right Column */}
-              <div className="space-y-3 pt-8">
-                <div className="aspect-[4/3] rounded-xl shadow-lg overflow-hidden border border-primary/20">
-                  <Image
-                    src="/menus/overloadkarekare.png"
-                    alt="Overload Kare-kare"
-                    width={300}
-                    height={225}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="aspect-square rounded-xl shadow-lg overflow-hidden border border-primary/20">
-                  <Image
-                    src="/menus/siomaiwithrice.png"
-                    alt="Siomai with Rice"
-                    width={300}
-                    height={300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+              
+              {/* Floating badge */}
+              <div className="relative mt-4 ml-4">
+                <div className="inline-block bg-white rounded-lg shadow-xl px-4 py-2 border-2 border-primary">
+                  <p className="text-xs font-semibold text-gray-700">EXACTLY AS SHOWN</p>
+                  <p className="text-lg font-bold text-primary">100%</p>
                 </div>
               </div>
-            </div>
-            
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-xl p-3 border-2 border-primary">
-              <p className="text-xs font-semibold text-gray-700 mb-0.5">EXACTLY AS SHOWN</p>
-              <p className="text-xl font-bold text-primary">100%</p>
             </div>
           </div>
         </div>
