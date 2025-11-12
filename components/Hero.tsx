@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Flame, Clock } from 'lucide-react';
 import Link from 'next/link';
 
+import Image from 'next/image';
+
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-secondary pt-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gray-900 pt-20">
       {/* Subtle Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgb(255_255_255_/_0.03)_1px,_transparent_0)] bg-[length:40px_40px]"></div>
       
@@ -62,23 +64,56 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Placeholder for food images */}
+          {/* Right Content - Food Images */}
           <div className="hidden lg:block relative">
             <div className="grid grid-cols-2 gap-4">
-              {/* Image placeholders - clean solid colors */}
+              {/* Left Column */}
               <div className="space-y-4">
-                <div className="aspect-square bg-zinc-800 rounded-2xl shadow-xl border border-zinc-700"></div>
-                <div className="aspect-[4/3] bg-zinc-800 rounded-2xl shadow-xl border border-zinc-700"></div>
+                <div className="aspect-square rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                  <Image
+                    src="/menus/overloaddinuguan.png"
+                    alt="Overload Dinuguan"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="aspect-[4/3] rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                  <Image
+                    src="/menus/lemongrasstea.png"
+                    alt="Lemongrass Tea"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
+              {/* Right Column */}
               <div className="space-y-4 pt-12">
-                <div className="aspect-[4/3] bg-zinc-800 rounded-2xl shadow-xl border border-zinc-700"></div>
-                <div className="aspect-square bg-zinc-800 rounded-2xl shadow-xl border border-zinc-700"></div>
+                <div className="aspect-[4/3] rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                  <Image
+                    src="/menus/overloadkarekare.png"
+                    alt="Overload Kare-kare"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="aspect-square rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                  <Image
+                    src="/menus/siomaiwithrice.png"
+                    alt="Siomai with Rice"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Floating badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-2xl p-4 border-2 border-primary">
-              <p className="text-xs font-semibold text-secondary mb-1">EXACTLY AS SHOWN</p>
+              <p className="text-xs font-semibold text-gray-700 mb-1">EXACTLY AS SHOWN</p>
               <p className="text-2xl font-bold text-primary">100%</p>
             </div>
           </div>
