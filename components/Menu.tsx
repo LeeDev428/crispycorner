@@ -76,40 +76,41 @@ export default function Menu() {
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3">
                   {categoryItems.map((item) => (
-                    <Card key={item.name} className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
+                    <Card key={item.name} className="group hover:shadow-md transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
                       {/* Image */}
                       <div className="aspect-square relative overflow-hidden bg-gray-100">
                         {item.image ? (
                           <Image
                             src={item.image}
                             alt={item.name}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            width={150}
+                            height={150}
+                            className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full"
                           />
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                            <div className="text-gray-400 text-6xl font-bold">CC</div>
+                            <div className="text-gray-400 text-3xl font-bold">CC</div>
                           </div>
                         )}
                         {item.price && (
-                          <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 rounded-full shadow-lg">
-                            <span className="font-bold text-xs">{item.price}</span>
+                          <div className="absolute top-1.5 right-1.5 bg-primary text-white px-1.5 py-0.5 rounded-full shadow-md">
+                            <span className="font-bold text-[10px]">{item.price}</span>
                           </div>
                         )}
                       </div>
 
-                      <CardHeader className="pb-2 px-3 pt-3">
-                        <CardTitle className="text-sm font-semibold text-gray-900 leading-tight line-clamp-2">{item.name}</CardTitle>
+                      <CardHeader className="pb-1.5 px-2 pt-2">
+                        <CardTitle className="text-xs font-semibold text-gray-900 leading-tight line-clamp-2">{item.name}</CardTitle>
                         {item.description && (
-                          <p className="text-xs text-gray-500 mt-1 line-clamp-1">{item.description}</p>
+                          <p className="text-[10px] text-gray-500 mt-0.5 line-clamp-1">{item.description}</p>
                         )}
                       </CardHeader>
 
-                      <CardContent className="pt-0 px-3 pb-3">
-                        <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white gap-1 text-xs py-2 h-8">
-                          <ShoppingCart className="h-3 w-3" />
+                      <CardContent className="pt-0 px-2 pb-2">
+                        <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white gap-1 text-[10px] py-1 h-6">
+                          <ShoppingCart className="h-2.5 w-2.5" />
                           <span>Order</span>
                         </Button>
                       </CardContent>
