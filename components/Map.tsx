@@ -34,7 +34,12 @@ export default function Map() {
       const mapInstance = L.map('map-container', {
         scrollWheelZoom: false,
         zoomControl: true,
-        attributionControl: true
+        attributionControl: true,
+        dragging: true,
+        touchZoom: true,
+        doubleClickZoom: true,
+        boxZoom: true,
+        keyboard: true
       }).setView([14.1474, 121.3114], 17);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -77,8 +82,8 @@ export default function Map() {
   return (
     <div 
       id="map-container" 
-      className="w-full rounded-lg overflow-hidden" 
-      style={{ height: '450px', maxHeight: '450px' }} 
+      className="w-full rounded-lg overflow-hidden relative" 
+      style={{ height: '450px', maxHeight: '450px', zIndex: 1 }} 
     />
   );
 }
