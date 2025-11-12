@@ -15,9 +15,9 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   // Sulit Meals/Add-ons
-  { name: 'Fried Siomai', category: 'Sulit Meals/Add-ons', price: '₱35' },
+  { name: 'Fried Siomai', category: 'Sulit Meals/Add-ons', price: '₱35', image: '/menus/siomai.png' },
   { name: 'Fried Siomai w/ Rice', category: 'Sulit Meals/Add-ons', price: '₱50', image: '/menus/siomaiwithrice.png' },
-  { name: 'Lumpia', category: 'Sulit Meals/Add-ons', price: '₱30' },
+  { name: 'Lumpia', category: 'Sulit Meals/Add-ons', price: '₱30', image: '/menus/lumpia.png' },
   { name: 'Lumpia w/ Rice', category: 'Sulit Meals/Add-ons', price: '₱45', image: '/menus/lumpiawithrice.png' },
   
   // Crispy Dinuguan
@@ -25,8 +25,8 @@ const menuItems: MenuItem[] = [
   { name: 'Crispy Dinuguan w/ Rice', category: 'Crispy Dinuguan', price: '₱80', image: '/menus/dinuguanbagnet.png' },
   
   // Crispy Kare-kare
-  { name: 'Crispy Kare-kare', category: 'Crispy Kare-kare', price: '₱70' },
-  { name: 'Crispy Kare-kare w/ Rice', category: 'Crispy Kare-kare', price: '₱85' },
+  { name: 'Crispy Kare-kare', category: 'Crispy Kare-kare', price: '₱70', image: '/menus/karekareonly.png' },
+  { name: 'Crispy Kare-kare w/ Rice', category: 'Crispy Kare-kare', price: '₱85', image: '/menus/karekareonly.png' },
   { name: 'Crispy Kare-kare w/ Rice w/ Veggies', category: 'Crispy Kare-kare', price: '₱95', image: '/menus/karekarebagnetwithveggies.png' },
   
   // Overload Bagnet Specials
@@ -34,9 +34,9 @@ const menuItems: MenuItem[] = [
   { name: 'Dinuguan Overload', description: 'with 3 Lumpia, 3 Siomai', category: 'Overload Bagnet Specials', price: '₱145', image: '/menus/overloaddinuguan.png' },
   
   // Drinks
-  { name: 'Bottled Water', category: 'Drinks', price: '₱15', image: '/menus/water.png' },
-  { name: 'Coke Mismo', category: 'Drinks', price: '₱20', image: '/menus/coke.png' },
-  { name: 'Lemon Grass Tea', category: 'Drinks', price: '₱25', image: '/menus/lemongrasstea.png' },
+  { name: 'Water', category: 'Drinks', price: '₱15', image: '/menus/water.png' },
+  { name: 'Coke', category: 'Drinks', price: '₱20', image: '/menus/coke.png' },
+  { name: 'Lemongrass Tea', category: 'Drinks', price: '₱25', image: '/menus/lemongrasstea.png' },
 ];
 
 const categories = [
@@ -80,15 +80,17 @@ export default function Menu() {
                   {categoryItems.map((item) => (
                     <Card key={item.name} className="group hover:shadow-sm transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
                       {/* Image */}
-                      <div className="aspect-square relative overflow-hidden bg-gray-100">
+                      <div className="aspect-square relative overflow-hidden bg-gray-100 p-2">
                         {item.image ? (
-                          <Image
-                            src={item.image}
-                            alt={item.name}
-                            width={100}
-                            height={100}
-                            className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full"
-                          />
+                          <div className={`relative w-full h-full ${category === 'Drinks' ? 'scale-75' : ''}`}>
+                            <Image
+                              src={item.image}
+                              alt={item.name}
+                              width={100}
+                              height={100}
+                              className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full rounded"
+                            />
+                          </div>
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
                             <div className="text-gray-400 text-2xl font-bold">CC</div>
