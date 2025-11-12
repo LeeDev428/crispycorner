@@ -30,7 +30,7 @@ export default function Team() {
   ];
 
   return (
-    <section id="team" className="py-20 bg-white">
+    <section id="team" className="py-20 bg-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -49,7 +49,7 @@ export default function Team() {
             <CardContent className="p-8 md:p-10">
               <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-primary rounded-full flex items-center justify-center shadow-xl">
+                  <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center shadow-xl">
                     <span className="text-5xl font-bold text-white">LT</span>
                   </div>
                 </div>
