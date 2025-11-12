@@ -45,29 +45,29 @@ export default function Team() {
 
         {/* Website Creator - Lee Rafael Torres */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Card className="bg-gray-900 text-white border-2 border-primary overflow-hidden">
+          <Card className="bg-gray-900 border-2 border-primary overflow-hidden shadow-xl">
             <CardContent className="p-8 md:p-10">
               <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center shadow-xl">
+                  <div className="w-32 h-32 bg-black rounded-full flex items-center justify-center shadow-xl border-4 border-primary/20">
                     <span className="text-5xl font-bold text-white">LT</span>
                   </div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="text-3xl font-bold text-white mb-2">Lee Rafael Torres</h3>
                   <p className="text-primary font-bold text-xl mb-4">Software Engineer</p>
-                  <p className="text-white/90 leading-relaxed mb-4">
+                  <p className="text-white leading-relaxed mb-4">
                     An experienced Software Engineer from Laguna, Philippines, passionate about programming 
                     and developing high-quality applications, websites, mobile apps, and systems using clean 
                     code and best practices.
                   </p>
-                  <p className="text-white/70 text-sm mb-6">Age: 21 | PUP Calauan Campus, Laguna</p>
+                  <p className="text-white text-sm mb-6">Age: 21 | PUP Calauan Campus, Laguna</p>
                   <div className="flex gap-3 justify-center md:justify-start">
                     <Link
                       href="https://www.facebook.com/lee.torres.5496683/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 text-white"
                       aria-label="Facebook"
                     >
                       <Facebook className="h-5 w-5" />
@@ -76,7 +76,7 @@ export default function Team() {
                       href="https://github.com/LeeDev428"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 text-white"
                       aria-label="GitHub"
                     >
                       <Github className="h-5 w-5" />
@@ -85,7 +85,7 @@ export default function Team() {
                       href="https://www.linkedin.com/in/lee-torres-361168333/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 text-white"
                       aria-label="LinkedIn"
                     >
                       <Linkedin className="h-5 w-5" />
@@ -94,7 +94,7 @@ export default function Team() {
                       href="https://leedev.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 text-white"
                       aria-label="Personal Website"
                     >
                       <Globe className="h-5 w-5" />
