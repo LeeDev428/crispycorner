@@ -108,18 +108,18 @@ export default function Team() {
 
         {/* Team Members */}
         <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-secondary">Team Members</h3>
+          <h3 className="text-2xl font-bold text-gray-900">Team Members</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member) => (
             <Card key={member.name} className="text-center hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 bg-white">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-24 h-24 bg-secondary rounded-full flex items-center justify-center mb-4 shadow-lg">
+                <div className="mx-auto w-24 h-24 bg-gray-900 rounded-full flex items-center justify-center mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                <CardTitle className="text-lg text-secondary">{member.name}</CardTitle>
+                <CardTitle className="text-lg text-gray-900">{member.name}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <p className="text-gray-600 text-sm font-medium">{member.role}</p>
