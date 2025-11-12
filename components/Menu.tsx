@@ -15,7 +15,7 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   // Sulit Meals/Add-ons
-  { name: 'Fried Siomai', category: 'Sulit Meals/Add-ons', price: '₱35', image: '/menus/siomai.png' },
+  { name: 'Fried Siomai', category: 'Sulit Meals/Add-ons', price: '₱35', image: '/menus/siomaionly.png' },
   { name: 'Fried Siomai w/ Rice', category: 'Sulit Meals/Add-ons', price: '₱50', image: '/menus/siomaiwithrice.png' },
   { name: 'Lumpia', category: 'Sulit Meals/Add-ons', price: '₱30', image: '/menus/lumpia.png' },
   { name: 'Lumpia w/ Rice', category: 'Sulit Meals/Add-ons', price: '₱45', image: '/menus/lumpiawithrice.png' },
