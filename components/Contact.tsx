@@ -47,9 +47,9 @@ export default function Contact() {
         {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {contactInfo.map((info) => (
-            <Card key={info.title} className="hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary bg-white">
+            <Card key={info.title} className="hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 hover:border-primary bg-white">
               <CardHeader>
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-red-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
+                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-3 shadow-lg">
                   <info.icon className="h-7 w-7 text-white" />
                 </div>
                 <CardTitle className="text-lg text-secondary">{info.title}</CardTitle>
