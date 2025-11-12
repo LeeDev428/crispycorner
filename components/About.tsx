@@ -46,9 +46,9 @@ export default function About() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary bg-white">
+            <Card key={feature.title} className="text-center hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 hover:border-primary bg-white">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 shadow-lg">
                   <feature.icon className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-lg text-secondary">{feature.title}</CardTitle>
