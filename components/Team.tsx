@@ -35,7 +35,7 @@ export default function Team() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Our Team</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-secondary mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             Meet Our Team
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ export default function Team() {
 
         {/* Website Creator - Lee Rafael Torres */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Card className="bg-secondary text-white border-2 border-primary overflow-hidden">
+          <Card className="bg-gray-900 text-white border-2 border-primary overflow-hidden">
             <CardContent className="p-8 md:p-10">
               <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                 <div className="flex-shrink-0">
