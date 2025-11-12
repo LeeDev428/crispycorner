@@ -38,11 +38,11 @@ const menuItems: MenuItem[] = [
 ];
 
 const categories = [
-  { name: 'Sulit Meals/Add-ons', color: 'from-primary to-red-600' },
-  { name: 'Crispy Dinuguan', color: 'from-secondary to-gray-900' },
-  { name: 'Crispy Kare-kare', color: 'from-orange-500 to-amber-600' },
-  { name: 'Overload Bagnet Specials', color: 'from-red-500 to-primary' },
-  { name: 'Drinks', color: 'from-primary to-pink-500' },
+  { name: 'Sulit Meals/Add-ons', color: 'bg-primary' },
+  { name: 'Crispy Dinuguan', color: 'bg-secondary' },
+  { name: 'Crispy Kare-kare', color: 'bg-primary' },
+  { name: 'Overload Bagnet Specials', color: 'bg-secondary' },
+  { name: 'Drinks', color: 'bg-primary' },
 ];
 
 export default function Menu() {
@@ -65,7 +65,7 @@ export default function Menu() {
           {categories.map((category) => (
             <div key={category.name}>
               {/* Category Header */}
-              <div className={`bg-gradient-to-r ${category.color} rounded-2xl p-6 mb-8 shadow-lg`}>
+              <div className={`${category.color} rounded-xl p-6 mb-8 shadow-lg`}>
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">{category.name}</h3>
               </div>
 
@@ -74,10 +74,10 @@ export default function Menu() {
                 {menuItems
                   .filter((item) => item.category === category.name)
                   .map((item) => (
-                    <Card key={item.name} className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary overflow-hidden">
+                    <Card key={item.name} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden">
                       {/* Image Placeholder */}
-                      <div className={`aspect-square bg-gradient-to-br ${category.color} relative overflow-hidden`}>
-                        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                      <div className={`aspect-square ${category.color} relative overflow-hidden`}>
+                        <div className="absolute inset-0 bg-black/10"></div>
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-white/80 text-6xl font-bold opacity-20">CC</div>
                         </div>
