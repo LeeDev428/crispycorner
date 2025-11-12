@@ -29,7 +29,7 @@ const config = {
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#39272d",
+          DEFAULT: "#3d2f2f",
           foreground: "#ffffff",
         },
         destructive: {
