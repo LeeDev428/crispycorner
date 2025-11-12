@@ -40,7 +40,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -103,7 +103,7 @@ export default function Contact() {
               </div>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="aspect-video">
+              <div style={{ height: '450px', width: '100%' }}>
                 <Map />
               </div>
             </CardContent>
