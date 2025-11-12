@@ -81,66 +81,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <Separator className="my-8 bg-gray-700" />
-
-        {/* Creator Info */}
-        <div className="mb-8">
-          <h3 className="text-white font-bold text-lg mb-4">Business Owner</h3>
-          <div className="bg-black/30 rounded-2xl p-6 border-2 border-primary/30 backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div>
-                <h4 className="text-white font-bold text-2xl mb-1">Lee Rafael Torres</h4>
-                <p className="text-primary font-bold mb-2 text-lg">Software Engineer</p>
-                <p className="text-sm text-gray-300 max-w-2xl leading-relaxed">
-                  An experienced Software Engineer from Laguna, Philippines, passionate about programming 
-                  and developing high-quality applications, websites, mobile apps, and systems using clean 
-                  code and best practices.
-                </p>
-                <p className="text-xs text-gray-400 mt-2">Age: 21 | PUP Calauan Campus, Laguna</p>
-              </div>
-              <div className="flex gap-3">
-                <Link
-                  href="https://www.facebook.com/lee.torres.5496683/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-5 w-5" />
-                </Link>
-                <Link
-                  href="https://github.com/LeeDev428"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-5 w-5" />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/lee-torres-361168333/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link
-                  href="https://leedev.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="Personal Website"
-                >
-                  <Globe className="h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <Separator className="my-8 bg-gray-700" />
+        <Separator className="my-8 bg-primary/30" />
 
         {/* Copyright */}
         <div className="text-center text-sm text-gray-400">
