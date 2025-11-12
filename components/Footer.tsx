@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-gray-300 border-t-4 border-primary">
+    <footer className="bg-gray-900 text-gray-300 border-t-4 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Column */}
@@ -57,9 +57,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>Kanluran Night Market</li>
+              <li>Barangay Kanluran Hall</li>
+              <li>48W6+XF3, Masiit</li>
               <li>Calauan, Laguna</li>
-              <li>Philippines</li>
               <li className="pt-2">
                 <a href="tel:+639773348124" className="hover:text-primary transition-colors">
                   +63 977 334 8124
