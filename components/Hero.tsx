@@ -66,45 +66,45 @@ export default function Hero() {
 
           {/* Right Content - Food Images */}
           <div className="hidden lg:block relative">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3">
               {/* Left Column */}
-              <div className="space-y-4">
-                <div className="aspect-square rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+              <div className="space-y-3">
+                <div className="aspect-square rounded-xl shadow-lg overflow-hidden border border-primary/20">
                   <Image
                     src="/menus/overloaddinuguan.png"
                     alt="Overload Dinuguan"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="aspect-[4/3] rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                <div className="aspect-[4/3] rounded-xl shadow-lg overflow-hidden border border-primary/20">
                   <Image
                     src="/menus/lemongrasstea.png"
                     alt="Lemongrass Tea"
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={225}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
               {/* Right Column */}
-              <div className="space-y-4 pt-12">
-                <div className="aspect-[4/3] rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+              <div className="space-y-3 pt-8">
+                <div className="aspect-[4/3] rounded-xl shadow-lg overflow-hidden border border-primary/20">
                   <Image
                     src="/menus/overloadkarekare.png"
                     alt="Overload Kare-kare"
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={225}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="aspect-square rounded-2xl shadow-xl overflow-hidden border-2 border-primary/20">
+                <div className="aspect-square rounded-xl shadow-lg overflow-hidden border border-primary/20">
                   <Image
                     src="/menus/siomaiwithrice.png"
                     alt="Siomai with Rice"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -112,9 +112,9 @@ export default function Hero() {
             </div>
             
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-2xl p-4 border-2 border-primary">
-              <p className="text-xs font-semibold text-gray-700 mb-1">EXACTLY AS SHOWN</p>
-              <p className="text-2xl font-bold text-primary">100%</p>
+            <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-xl p-3 border-2 border-primary">
+              <p className="text-xs font-semibold text-gray-700 mb-0.5">EXACTLY AS SHOWN</p>
+              <p className="text-xl font-bold text-primary">100%</p>
             </div>
           </div>
         </div>
