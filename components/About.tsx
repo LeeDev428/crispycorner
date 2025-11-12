@@ -51,7 +51,7 @@ export default function About() {
                 <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 shadow-lg">
                   <feature.icon className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-lg text-secondary">{feature.title}</CardTitle>
+                <CardTitle className="text-lg text-gray-900">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">{feature.description}</p>
@@ -62,7 +62,7 @@ export default function About() {
 
         {/* Story Section */}
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-secondary border-2 border-primary shadow-xl overflow-hidden">
+          <Card className="bg-gray-900 border-2 border-primary shadow-xl overflow-hidden">
             <CardContent className="p-8 md:p-12">
               <h3 className="text-3xl font-bold text-white mb-6">Our Story</h3>
               <p className="text-white/90 leading-relaxed mb-4 text-lg">
