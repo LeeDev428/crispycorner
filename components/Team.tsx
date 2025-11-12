@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Facebook } from 'lucide-react';
+import { Facebook, Github, Linkedin, Globe } from 'lucide-react';
 import Link from 'next/link';
 
 interface TeamMember {
@@ -43,28 +43,94 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Team Grid */}
+        {/* Website Creator - Lee Rafael Torres */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Card className="bg-secondary text-white border-2 border-primary overflow-hidden">
+            <CardContent className="p-8 md:p-10">
+              <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 bg-primary rounded-full flex items-center justify-center shadow-xl">
+                    <span className="text-5xl font-bold text-white">LT</span>
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-3xl font-bold text-white mb-2">Lee Rafael Torres</h3>
+                  <p className="text-primary font-bold text-xl mb-4">Software Engineer</p>
+                  <p className="text-white/90 leading-relaxed mb-4">
+                    An experienced Software Engineer from Laguna, Philippines, passionate about programming 
+                    and developing high-quality applications, websites, mobile apps, and systems using clean 
+                    code and best practices.
+                  </p>
+                  <p className="text-white/70 text-sm mb-6">Age: 21 | PUP Calauan Campus, Laguna</p>
+                  <div className="flex gap-3 justify-center md:justify-start">
+                    <Link
+                      href="https://www.facebook.com/lee.torres.5496683/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="Facebook"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </Link>
+                    <Link
+                      href="https://github.com/LeeDev428"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="GitHub"
+                    >
+                      <Github className="h-5 w-5" />
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/lee-torres-361168333/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </Link>
+                    <Link
+                      href="https://leedev.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-primary hover:bg-primary/80 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="Personal Website"
+                    >
+                      <Globe className="h-5 w-5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Team Members */}
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold text-secondary">Team Members</h3>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="text-center hover:shadow-2xl transition-all hover:-translate-y-2 border-2 hover:border-primary bg-white overflow-hidden">
-              <CardHeader className="pb-6">
-                <div className="mx-auto w-28 h-28 bg-gradient-to-br from-primary via-red-500 to-secondary rounded-full flex items-center justify-center mb-4 shadow-xl ring-4 ring-white">
-                  <span className="text-4xl font-bold text-white">
+            <Card key={member.name} className="text-center hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-200 bg-white">
+              <CardHeader className="pb-4">
+                <div className="mx-auto w-24 h-24 bg-secondary rounded-full flex items-center justify-center mb-4 shadow-lg">
+                  <span className="text-3xl font-bold text-white">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                <CardTitle className="text-xl text-secondary">{member.name}</CardTitle>
+                <CardTitle className="text-lg text-secondary">{member.name}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600 font-medium">{member.role}</p>
+              <CardContent className="space-y-3">
+                <p className="text-gray-600 text-sm font-medium">{member.role}</p>
                 <Link
                   href={member.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors shadow-md"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors text-sm"
                 >
                   <Facebook className="h-4 w-4" />
-                  <span className="text-sm font-medium">Connect</span>
+                  <span className="font-medium">Connect</span>
                 </Link>
               </CardContent>
             </Card>
