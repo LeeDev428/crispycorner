@@ -80,9 +80,9 @@ export default function Menu() {
                   {categoryItems.map((item) => (
                     <Card key={item.name} className="group hover:shadow-sm transition-all duration-300 border border-gray-200 hover:border-primary overflow-hidden bg-white">
                       {/* Image */}
-                      <div className="aspect-square relative overflow-hidden bg-gray-100 p-2">
+                      <div className={`aspect-square relative overflow-hidden bg-gray-100 flex items-center justify-center ${category === 'Drinks' ? 'p-6' : 'p-2'}`}>
                         {item.image ? (
-                          <div className={`relative w-full h-full ${category === 'Drinks' ? 'scale-75' : ''}`}>
+                          <div className={`relative ${category === 'Drinks' ? 'w-2/3 h-2/3' : 'w-full h-full'}`}>
                             <Image
                               src={item.image}
                               alt={item.name}
