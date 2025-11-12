@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Creator Info */}
         <div className="mb-8">
-          <h3 className="text-white font-bold text-lg mb-4">Website Creator</h3>
+          <h3 className="text-white font-bold text-lg mb-4">Business Owner</h3>
           <div className="bg-black/30 rounded-2xl p-6 border-2 border-primary/30 backdrop-blur-sm">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
